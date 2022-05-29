@@ -13,7 +13,7 @@ expected_banner_text = "Welcome to the alpha blog user#{timestamp}"
 describe "Blog application" do
   describe "when signing up a new user"	do
   	it "creates a new user account successfully" do
-		  @driver = Selenium::WebDriver.for :firefox
+		  @driver = Selenium::WebDriver.for :chrome
       # Go to signup form
       @driver.navigate.to "https://selenium-blog.herokuapp.com/signup"
 		  # Fill out and submit form
